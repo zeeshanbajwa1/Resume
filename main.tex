@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Zeeshan Nasir Bajwa}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Network Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{http://zeeshanbajwa.me}{zeeshanbajwa.me}}\\ 
+    \icon{Phone}{11}{+923119578110}\\
+    \icon{MapMarker}{11}{Isb, Pakistan}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:zbajwa458@gmail.com}{zbajwa458@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/zeeshanbajwa1}{zeeshanbajwa1}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/zeeshanbajwa1}{zeeshanbajwa1}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+
+	An IT professional with 5 years of experience including ISP, specializing in LAN/WAN networks. Proficient in Networking and Cloud. Skilled in implementing, analyzing, and troubleshooting complex systems.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Devices Worked On}
+	\vspace{-6pt}
+ 
+
+	Cisco(Routers: 891, 892, 1218, 2811, 2911, ISR4881, Core7200,  Switches: 2960, 3560, 3550 Firewall: ASA, FMC, FTD), Huawei(Routers: Ar 150, AX6000, AR1000, Eg8145X6, NetEngine8000E, Switches: S5735 Firewall: USG6700E), Fortinet(Fortigate FG100F, 601F), Microtik(Core Cloud CCR1009), Oring MC, Microsoft Azure, Esxi 6.0, 7.0, Omada Tp-link Archer.
+\end{minipage}
+\hfill % Whitespace between
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Switching}
+		{LAN Managed Switches for 1600 Branches for National Bank of Pakistan}
+		{Oct 2023}
+		{%Dummy text 
+        The project encompasses the procurement and meticulous configuration of LAN Managed Switches, specifically the S5735 series. It involves the acquisition of these switches followed by a detailed setup adhering to specific security measures and network configurations. This encompasses setting up user authentication, SSH access, VLAN configurations, port security, routing, network services like NTP, and comprehensive logging for monitoring and auditing purposes. Additionally, it includes the implementation of Spanning Tree Protocol (STP) for network stability and SNMP for effective network management. The project's successful execution ensures a fortified network infrastructure through stringent security measures and efficient management configurations. It delivers a meticulously configured network of LAN Managed Switches (S5735 series) that adhere to the provided specifications, enhancing the overall security, efficiency, and manageability of the network infrastructure. The documented configurations and setup facilitate future troubleshooting, maintenance, and network expansion.}
+    \entry
+		{Routing}
+		{Punjab Public Service Commission}
+		{June 2023}
+		{%Dummy text 
+        Project for the Punjab Public Service Commission to establish a robust and secure network to connect PPSC's locations in Pakistan. It improved communication and data sharing between their Islamabad, Lahore, and Multan offices. All 4 sites achieved successful connectivity, ensuring smooth communication and data transfer. The network had high availability and redundancy for minimal downtime and efficient traffic handling. BGP enabled connectivity with external networks for secure data exchange with trusted partners. Additionally, OSPF was implemented for LAN side connectivity in all four branches, including two in Lahore (1 aggregate and 1 branch), one in Islamabad, and one in Multan.}
+	\entry
+		{Network Security}
+		{LSS School Systems Network Security Project}
+		{Feb 2023}
+		{%Dummy text 
+        A comprehensive network security strategy was implemented, employing Fortigate 601F and Cisco ASA firewalls. The primary aim was to fortify the network infrastructure to meet stringent security demands. The Fortigate 601F was configured as the primary defense, offering advanced threat protection, intrusion prevention, SSL inspection, and secure remote access. It was optimized for efficient traffic management through policy-based and dynamic routing. Meanwhile, the Cisco ASA served as a secondary firewall, mirroring the primary's security capabilities and supporting site-to-site and remote access VPN functionalities. Both systems were meticulously fine-tuned to work harmoniously, ensuring maximum security and uninterrupted availability. The project also involved creating comprehensive security policies to govern the appropriate use and administration of these firewalls.}
+    \entry
+		{Infra Deployment}
+		{Hired International Pvt Ltd Networking Project}
+		{June 2022}
+		{%Dummy text 
+        A comprehensive networking project was completed, involving the deployment and pre-configuration of Cisco 2960, 3550, and 3560 switches, alongside the setup of a CCTV system with 32 IP cameras and a Hikvision NVR. To streamline network management, a Microtic CCR1009 Core cloud router with auto-failover, load balancing, and a built-in firewall was employed. Additionally, an Omada wireless controller 300 and multiple Tplink Archer 3600 access points were installed for seamless wireless connectivity. The primary goal was to establish a reliable, secure, and high-performance network infrastructure, with each component carefully chosen and configured to achieve these objectives.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{Continue Online}
+		{Bachelor of Science in Information Technology (BSIT)}
+		{University}
+		{Virtual University of Pakistan}
+    \entry
+		{2020 - 2022}
+		{FA (General Science, IT Applications)}
+		{College}
+		{Allama Iqbal Open University}
+	\entry
+		{2022 - 2022}
+		{Networking and Cloud Computing}
+		{Professional Training}
+		{NAVTTC, Ministry of Information Technology, Pakistan}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {1/2023 -- Cont.}
+		{Network Engineer}
+		{Wateen Telecom}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Utilize SolarWinds Orion Core 2010 for Network Monitoring to manage and maintain network nodes, ensuring system availability and reliability.
+            \item Manage and maintain Huawei and Cisco Routers and Switches to guarantee their optimal performance within the network infrastructure.
+            \item Implement Internet protocols on Huawei (Ar 150, AX6000, AR1000) and Cisco routers (892FSW, 1218, 891F, 2811, 2911, 4883, as well as 3550, 2960, and 3560) Switches for seamless data transmission.
+            \item Configure and Maintain security authentication protocols (IPSec) to ensure secure and encrypted network communications.
+            \item Configure and Maintain Routing Protocols (BGP, OSPF) for efficient data routing and transmission within the network.
+            \item Collaborate with the Transport and Network Operations Center to design and implement end-to-end networking solutions.
+            \item Develop and maintain comprehensive documentation related to network infrastructure. Evaluate, select, and adapt control techniques and procedures to resolve network issues effectively.
+        \end{itemize} 
+        \texttt{Solarwinds} \slashsep \texttt{Cisco} \slashsep \texttt{Huawei} \slashsep \texttt{Oring MC}}
+	\entry
+		{5/2022 -- 1/2023}
+		{Information Technology Officer}
+		{Hired International Pvt Ltd}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+    \item Microtik Core Cloud Router 1009 Configuration, Configured with dual WANs, Load Balancing, Auto fail-over, and maintained Microtik's advanced firewall for stringent corporate network security policies.
+    
+    \item Orchestrated planning, organization, control, and evaluation of IT operations covering Networks, Hardware, Software, and OS. Oversaw technology installations and upkeep.
+    
+    \item Designed, developed, implemented, and coordinated systems, policies, and procedures. Conducted rigorous testing and troubleshooting for seamless system functionality in alignment with user needs and organizational policies.
+    
+    \item CCTV Security, Managed and maintained IP cameras integrated with Network Video Recorder (NVR) for robust surveillance and security purposes.
+    
+    \item Cloud-Based Email Server Administration, Operated a cPanel-based Cloud Email Server with domain integration, including Outlook configuration on user PCs.
+    
+    \item WLC TP-Link OC300 Setup, Managed WLC TP-Link OC300 with multiple Access Points supporting VLANs and MAC bindings across distinct SSID Channels (2.4GHz, 5GHz, and 6GHz).
+    
+    \item Comprehensive Support Services, Provided extensive physical and remote support across the entire company's IT infrastructure.
+
+
+        \end{itemize} 
+        \texttt{Network Configuration \& Security} \slashsep \texttt{IT Operations Management}  \slashsep \texttt{CCTV Management} \slashsep \texttt{Email Server Administration} \slashsep \texttt{WLAN Management} \slashsep \texttt{Comprehensive IT Support Services}}
+
+        \entry
+		{3/2022 - 5/2022}
+		{Network Support Engineer}
+		{ArfaTech Communications}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+    \item Network System Support: Resolving end-user complaints concerning Windows, Windows servers, printers, software, and related issues.
+    \item Level Two IT Support: Providing advanced internal customer support for various IT-related concerns.
+    \item Remote Issue Management: Executing remote troubleshooting to address technical issues efficiently.
+    \item Proactive Monitoring and Feedback: Continuously monitoring and delivering timely, accurate feedback to customers and management regarding issues.
+    \item Escalation Protocol Adherence: Following predefined guidelines and policies for the proper escalation of issues to higher management.
+    \item Complaint-Based Issue Resolution: Resolving user issues based on a complaint-driven system.
+    \item Basic Network Configuration: Performing basic configuration tasks for switches and routers.
+    \item Windows Server 2016 Setup: Installing and configuring Windows Server 2016 and its roles as per company specifications.
+    \item Hardware Device Installation: Handling the installation of various hardware devices within the network infrastructure.
+        \end{itemize}
+        \texttt{Troubleshooting} \slashsep \texttt{Networking} \slashsep \texttt{IT Management}}
+        \entry
+		{3/2022 - 2/2022}
+		{Network Support Engineer}
+		{Shezan International Pvt Ltd}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Basic configuration of switches and Routers.
+            \item Installation and configuration of windows server 2016 and it’s roles according to company requirements.
+            \item Installation of hardware devices.
+            \item Resolving user issue and complaints related to hardware and software.
+            \item Followup customer, pro-active monitoring, timely and accurate feedback
+            of issues to customer and management.
+            \item Proper escalation of issues to management according to guidelines and
+            policies.
+            \item Resolving user issues on a complaint-based system.
+            \item Testing and troubleshooting network and systems so, they can operate
+            perfectly.
+            \item Identify problematic areas and implement strategic solutions in time.
+        \end{itemize} 
+        \texttt{Cisco} \slashsep \texttt{Windows} \slashsep \texttt{LAN} \slashsep \texttt{IT Management}}
+        \entry
+		{2/2018 - 10/2020}
+		{IT Support Specialist}
+		{Subway}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item  Diagnose and troubleshoot technical issues on Windows, Linux, and Mac operating systems.
+            \item  Install, configure, maintain, and upgrade hardware and software systems.
+            \item  Monitor, analyze and troubleshoot LAN connectivity to the internet.
+            \item  Create and maintain user accounts and profiles.
+            \item  Provide technical support to users via phone, email, and in person.
+            \item  Train users in the use of computer systems, software, and hardware.
+            \item  Provide on-site and remote technical support.
+            \item  Monitor server and network performance.
+            \item  Recommend and implement system upgrades.
+        \end{itemize} 
+        \texttt{IT Management} \slashsep \texttt{Operating Systems} \slashsep \texttt{Wiring} \slashsep \texttt{Desktop Support}}
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Certifications}
+    \vspace{-6pt}
+    
+    \textbf{Cisco} - CCNA (R&S), CCNP (R&S)
+    \\ \textbf{Huawei} - HCIP (Advance Datacom R&S), HCIA Cloud, HCIA Security
+    \\ \textbf{Microsoft} - Azure Solution Architect Expert AZ305, Azure Administrator Associate AZ104, Azure Fundamentals AZ900, Azure Security and Complience SC900, DevOps Engineer Expert AZ400, 365 Fundamentals MS900
+    \\ \textbf{Fortinet} - NSE1, 2, 3, Fundamental in CyberSecurity, Associate in Cyber Security
+    
+
+\vspace{-4 pt}
+	\cvsect{Memberships}
+    \vspace{-6pt}
+    
+    \textbf{Microsoft Certified Trainer} - (2021 - Cont.)
+    \\ \textbf{Microsoft Learn Student Ambassador (Alpha)} - (2023 - Cont.)
+    \\ \textbf{Cisco Partner Employee} - (2023 - Cont.)
+    \\ \textbf{Huawei Partner Employee} - (2023 - Cont.)
+
+    \vspace{-4 pt}
+	\cvsect{Language}
+    \vspace{-6pt}
+    
+    \textbf{English} - B2/C1
+    \\ \textbf{Urdu} - Native
+    \\ \textbf{Punjabi} - C1
+\end{document}
